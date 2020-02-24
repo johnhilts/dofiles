@@ -1,0 +1,22 @@
+[user]
+	name = johnhilts
+	email = jhilts@lampsplus.com
+[merge]
+	tool = p4merge
+[diff]
+	guitool = beyondcompare3
+[difftool "beyondcompare3"]
+	path = C:/Program Files (x86)/Beyond Compare 3/bcompare.exe
+	cmd = \"C:/Program Files (x86)/Beyond Compare 3/bcompare.exe\" \"$LOCAL\" \"$REMOTE\"
+[mergetool "p4merge"]
+	path = "/mnt/c/Program Files/Perforce/p4merge.exe"
+	cmd = \"/mnt/c/Program Files/Perforce/p4merge.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	keepBackup = false
+[http]
+	sslVerify = true
+[credential]
+[core]
+	# editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	autocrlf = false
+	safecrlf = false
+	eol = crlf
